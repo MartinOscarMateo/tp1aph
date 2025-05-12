@@ -1,7 +1,6 @@
 import express from "express";
 import chalk from "chalk";
 import dotenv from "dotenv";
-import mongoose from "mongoose";
 dotenv.config();
 
 const port = process.env.PORT;
@@ -12,7 +11,7 @@ app.use(express.json());
 
 app.get('/', (request, response) =>{
     console.log('Ruta Raíz');
-    response.send('Home');
+    response.send('hola guacho');
 });
 
 routerAPI(app);
